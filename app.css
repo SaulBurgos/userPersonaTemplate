@@ -1,0 +1,93 @@
+.guideLine {
+	border: 1px solid red;
+}
+
+.borderBox {
+	border: 1px solid #dddddd;
+}
+
+.itemList {
+	padding: 6px !important;
+	font-size: 17px !important;
+	margin: 2px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding-top: 0.1px;
+  display: flex;
+}
+
+h1{
+	color:#757575;
+}
+
+h2, h3, h4, h5, h6, p, span{
+	color: #5f5f56;
+	font-weight: 100 !important;
+}
+
+.italic{
+	font-style: italic;
+}
+.image-responsive{
+    max-width: 100%;
+    height: auto;
+}
+
+.image-container {
+  height: 210px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 1%;
+}
+
+.border-top__solid{
+	border-top: 2px solid #757575 !important;
+}
+.border-bottom__solid{
+	border-bottom: 2px solid #757575 !important;
+}
+.border-right__solid{
+	border-right: 2px solid #757575 !important;
+}
+.border-left__solid{
+	border-left: 2px solid #757575 !important;
+}
+
+.border-top__doted{
+	border-top: 2px dotted #757575 !important;
+}
+.border-bottom__doted{
+	border-bottom: 2px dotted #757575 !important;
+}
+.border-left__doted{
+	border-left: 2px dotted #757575 !important;
+}
+.border-right__doted{
+	border-right: 2px dotted #757575 !important;
+}
+
+.vertical-range {
+    -webkit-appearance: slider-vertical;
+    width: 20px;
+    height: 180px;
+}
+
+.range-3-set{
+	transform: rotate(-90deg);font-size: 12px;line-height: 25px;
+}
+.range-5-set{
+	transform: rotate(-90deg);font-size: 12px;line-height: 22px;
+}
