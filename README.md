@@ -1,3 +1,3 @@
 # Html Template of user Persona
 
-Html template taht you can use to create users personas
+Html template that you can use to create users personas
