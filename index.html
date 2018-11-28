@@ -3,20 +3,32 @@
 <head>
 	<title>user-persona</title>
 	<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		
-		<!--Preload and prefetch section-->
-		<link rel="preload" as="style" href="app.css">
-	<link rel="preload" as="style" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO">
-	<link rel="prefetch" as="script" href="https://code.jquery.com/jquery-3.3.1.slim.min.js">
-	<link rel="prefetch" as="script" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-	<link rel="prefetch" as="script" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
-	<link rel="prefetch" as="font" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
-
-	<!--Import section CSS and FONTS-->
-	<link rel="stylesheet" type="text/css" href="app.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+
+	<style>	
+		.guideLine {
+			border: 1px solid red;
+		}
+
+		.borderBox {
+			border: 1px solid #dddddd;
+		}
+
+		.itemList {
+			padding: 6px !important;
+			font-size: 17px !important;
+			margin: 2px;
+		}
+
+		body {
+			font-family: 'Roboto';
+			margin: 0;
+			padding-top: 0.1px;
+			display: flex;
+		}
+	</style>
 </head>
 <body>
 
@@ -25,39 +37,42 @@
 	<div class="row" style="margin-bottom:40px;">
 		<div class="col-4 text-center">
 			<div class="image-container">
-				<img class="image-responsive" data-src="" src="https://dummyimage.com/300/cbcdce/cbcdce">
+				<img class="image-responsive" data-src="" src="https://dummyimage.com/300/cbcdce/cbcdce" style="height:180px;">
 			</div>
 			<div class="mt-2 italic">
-				Alguna frase común que lo identifique
+				A phrase that identify this person
 			</div>
 		</div>
-		<div class="col-8">
-			<h1>Característica principal</h1>
-			<div class="row p-0 border-bottom__doted">
+		<div class="col-8 borderBox">
+			<h1 class="text-center">
+				Main feature
+			</h1>
+			<div class="row p-0">
 				<div class="col">
-					<h2>Name</h2>
+					<h5>Name persona</h5>
 				</div>
 				<div class="col">
 					<h6>
 						<ul>
-							<li>Edad</li>
-							<li>Estado civil</li>
+							<li>Age</li>
+							<li>Marital status</li>
+							<li>Family</li>
 						</ul>
 					</h6>
 				</div>
 				<div class="col">
 					<h6>
 						<ul>
-							<li>Rol profesional</li>
-							<li>Educación</li>
+							<li>Education</li>
+							<li>Economic status</li>
 						</ul>
 					</h6>
 				</div>
 			</div>
 			<div class="row p-3">
 				<div class="col-12">
-					<p>
-						Una breve descripción sobre su persona, algunas notas sobre su vida personal, gustos, actividades laborales y de recreación.
+					<p>						
+						A brief description about him, some notes about his personal life, tastes, work and recreation activities. 
 					</p>
 				</div>				
 			</div>
@@ -68,64 +83,64 @@
 		
 		<div class="col-3 borderBox">
 			<h5 class="text-center">
-				Personalidad
+				Personality
 			</h5>		
-			<span class="badge badge-info itemList">Adjetivo</span>
-			<span class="badge badge-danger itemList">Adjetivo</span>
-			<span class="badge badge-info itemList">Adjetivo</span>
-			<span class="badge badge-danger itemList">Adjetivo</span>
-			<span class="badge badge-info itemList">Adjetivo</span>
-			<span class="badge badge-danger itemList">Adjetivo</span>
-			<span class="badge badge-info itemList">Adjetivo</span>
-			<span class="badge badge-danger itemList">Adjetivo</span>
+			<span class="badge badge-info itemList">Adjective</span>
+			<span class="badge badge-danger itemList">Adjective</span>
+			<span class="badge badge-info itemList">Adjective</span>
+			<span class="badge badge-danger itemList">Adjective</span>
+			<span class="badge badge-info itemList">Adjective</span>
+			<span class="badge badge-danger itemList">Adjective</span>
+			<span class="badge badge-info itemList">Adjective</span>
+			<span class="badge badge-danger itemList">Adjective</span>
 		</div>
 		<div class="col-3 borderBox">
 			<h5 class="text-center">
-				Nivel de experiencia
+				Experience
 			</h5>
 			<!--Habilidad 1-->
 			<div class="progress mt-3">
 				<div class="progress-bar w-50 bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
-			<div>Habilidad 1</div>
+			<div>Ability 1</div>
 
 			<!--Habilidad 2-->
 			<div class="progress mt-3">
 				<div class="progress-bar w-75 bg-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
-			<div>Habilidad 2</div>
+			<div>Ability 2</div>
 
 			<!--Habilidad 3-->
 			<div class="progress mt-3">
 				<div class="progress-bar w-25 bg-danger" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
-			<div>Habilidad 3</div>
+			<div>Ability 3</div>
 
 			<!--Habilidad 4-->
 			<div class="progress mt-3">
 				<div class="progress-bar w-100 bg-danger" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
 			</div>
-			<div>Habilidad 4</div>
+			<div>Ability 4</div>
 		</div>
 		<div class="col-3 borderBox">
 			<h5 class="text-center">
-				Experiencia de usuario ideal
+				Ideal experience of this persona
 			</h5>			
-			<span class="badge badge-info itemList">Adjetivo</span>
-			<span class="badge badge-danger itemList">Adjetivo</span>
-			<span class="badge badge-info itemList">Adjetivo</span>
-			<span class="badge badge-danger itemList">Adjetivo</span>
-			<span class="badge badge-info itemList">Adjetivo</span>
-			<span class="badge badge-danger itemList">Adjetivo</span>
-			<span class="badge badge-info itemList">Adjetivo</span>
-			<span class="badge badge-danger itemList">Adjetivo</span>			
+			<span class="badge badge-info itemList">Adjective</span>
+			<span class="badge badge-danger itemList">Adjective</span>
+			<span class="badge badge-info itemList">Adjective</span>
+			<span class="badge badge-danger itemList">Adjective</span>
+			<span class="badge badge-info itemList">Adjective</span>
+			<span class="badge badge-danger itemList">Adjective</span>
+			<span class="badge badge-info itemList">Adjective</span>
+			<span class="badge badge-danger itemList">Adjective</span>			
 		</div>
 		<div class="col-3 borderBox">
 			<h5>
-				Tecnologías
+				Technology
 			</h5>
-			<p>
-				Algunas notas sobre sus preferencias y hábitos de tecnologías
+			<p>				
+				Some notes about preferences and habits on technologies.
 			</p>
 		</div>
 	</div>
@@ -133,43 +148,43 @@
 
 	<div class="row" style="margin-bottom: 40px;">
 		<div class="col-3">
-			<div class="bg-danger p-2 text-light">
-				Objetivos
+			<div class="bg-danger p-2 text-light text-center">
+				Goals
 			</div>
 			<ol class="borderBox">
-				<li>Linea 1</li>
-				<li>Linea 2</li>
-				<li>Linea 3</li>
+				<li>Goal 1</li>
+				<li>Goal 2</li>
+				<li>Goal 3</li>
 			</ol>
 		</div>
 		<div class="col-3">
-			<div class="bg-danger p-2 text-light">
-				Must Do
+			<div class="bg-danger p-2 text-light text-center">
+				Must do
 			</div>
 			<ol class="borderBox">
-				<li>Linea 1</li>
-				<li>Linea 2</li>
-				<li>Linea 3</li>
+				<li>Action 1</li>
+				<li>Action 2</li>
+				<li>Action 3</li>
 			</ol>
 		</div>
 		<div class="col-3">
-			<div class="bg-danger p-2 text-light">
-				Never Do
+			<div class="bg-danger p-2 text-light text-center">
+				Never do
 			</div>
 			<ol class="borderBox">
-				<li>Linea 1</li>
-				<li>Linea 2</li>
-				<li>Linea 3</li>
+				<li>Action 1</li>
+				<li>Action 2</li>
+				<li>Action 3</li>
 			</ol>
 		</div>
 		<div class="col-3">
-			<div class="bg-danger p-2 text-light">
-				Frustraciones
+			<div class="bg-danger p-2 text-light text-center">
+				Frustrations
 			</div>
 			<ol class="borderBox">
-				<li>Linea 1</li>
-				<li>Linea 2</li>
-				<li>Linea 3</li>
+				<li>Line 1</li>
+				<li>line 2</li>
+				<li>line 3</li>
 			</ol>
 		</div>
 	</div>
@@ -180,64 +195,64 @@
 			<div class="row">
 
 				<div class="col-4 text-center bg-danger p-2 text-light">
-					Conocimientos	
+					Knowledge
 				</div>
 				<div class="col-4 text-center bg-danger p-2 text-light">
-					Actividades
+					Activities
 				</div>
 				<div class="col-4 text-center bg-danger p-2 text-light">
-					Intereses
+					Interests
 				</div>
 
 				<div class="col-4 text-center borderBox" style="padding:15px;">					
 					<div class="progress">
 						<div class="progress-bar w-50 bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-					<div>Conocimiento 1</div>
+					<div>Knowledge 1</div>
 
 					<div class="progress">
 						<div class="progress-bar w-50 bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-					<div>Conocimiento 2</div>
+					<div>Knowledge 2</div>
 
 					<div class="progress">
 						<div class="progress-bar w-50 bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-					<div>Conocimiento 3</div>
+					<div>Knowledge 3</div>
 				</div>
 
 				<div class="col-4 text-center borderBox" style="padding:15px;">
 					<div class="progress">
 						<div class="progress-bar w-50 bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-					<div>Actividad 1</div>
+					<div>Activity 1</div>
 
 					<div class="progress">
 						<div class="progress-bar w-50 bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-					<div>Actividad 2</div>
+					<div>Activity 2</div>
 
 					<div class="progress">
 						<div class="progress-bar w-50 bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-					<div>Actividad 3</div>
+					<div>Activity 3</div>
 				</div>
 
 				<div class="col-4 text-center borderBox" style="padding:15px;">
 					<div class="progress">
 						<div class="progress-bar w-50 bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-					<div>Interes 1</div>
+					<div>Interest 1</div>
 
 					<div class="progress">
 						<div class="progress-bar w-50 bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-					<div>Interes 2</div>
+					<div>Interest 2</div>
 
 					<div class="progress">
 						<div class="progress-bar w-50 bg-danger" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 					</div>
-					<div>Interes 3</div>
+					<div>Interest 3</div>
 				</div>
 				
 			</div>
@@ -251,8 +266,5 @@
 	</div>	
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
